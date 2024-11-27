@@ -71,10 +71,7 @@ const NavItemComponent = ({ item }: { item: NavItem }) => {
   return (
     <Link
       href={item.href || '#'}
-      className={cn(
-        "block py-2 text-gray-700 hover:text-gray-900 transition-colors",
-        item.className
-      )}
+      className="block py-2 text-gray-700 hover:text-gray-900 transition-colors"
     >
       {item.title}
     </Link>

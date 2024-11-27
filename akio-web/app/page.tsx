@@ -12,11 +12,13 @@ export default function Home() {
             Welcome
           </h1>
           <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
-            Intro Text TBD.
+            I'm Akio. Operator and entrepreneur, currently based in SF. 
+            <br></br>
+            I believe in transparency and created this page to share more about my principles and thoughts. 
           </p>
           <div className="mt-5 sm:mt-8">
             <Link href="/pages/user-manual-akio">
-              <Button>Learn More About Me</Button>
+              <Button>Click here to unpack the user manual for Akio</Button>
             </Link>
           </div>
         </div>

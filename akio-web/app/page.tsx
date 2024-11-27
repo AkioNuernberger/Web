@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import AnimatedBackground from "./components/AnimatedBackground"
+import AnimatedBackground from "@/components/AnimatedBackground"
 
 export default function Home() {
   return (

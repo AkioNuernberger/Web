@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import AnimatedBackground from "@/components/AnimatedBackground"
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
             Intro Text TBD.
           </p>
           <div className="mt-5 sm:mt-8">
-            <Button>Learn More About Me</Button>
+            <Link href="/pages/user-manual-akio">
+              <Button>Learn More About Me</Button>
+            </Link>
           </div>
         </div>
       </main>

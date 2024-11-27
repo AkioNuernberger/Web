@@ -19,7 +19,7 @@ const navigation: NavItem[] = [
   {
     title: 'Pages',
     children: [
-      { title: 'Manual - Akio', href: '/pages/manual-akio' },
+      { title: 'User Manual - Akio', href: '/pages/user-manual-akio' },
       { title: '2024 reflection', href: '/pages/2024-reflection' }
     ]
   },

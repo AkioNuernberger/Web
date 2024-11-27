@@ -9,12 +9,14 @@ interface NavItem {
   title: string
   href?: string
   children?: NavItem[]
+  className?: string
 }
 
 const navigation: NavItem[] = [
   {
-    title: <span className="font-bold text-xl pt-3 mb-4 block">Akio Ishihara</span>,
-    href: '/'
+    title: "Akio Ishihara",
+    href: '/',
+    className: "font-bold text-xl pt-3 mb-4 block"
   },
   {
     title: 'Pages',
@@ -69,7 +71,10 @@ const NavItemComponent = ({ item }: { item: NavItem }) => {
   return (
     <Link
       href={item.href || '#'}
-      className="block py-2 text-gray-700 hover:text-gray-900 transition-colors"
+      className={cn(
+        "block py-2 text-gray-700 hover:text-gray-900 transition-colors",
+        item.className
+      )}
     >
       {item.title}
     </Link>

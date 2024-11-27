@@ -12,7 +12,7 @@ export default function Home() {
             Welcome
           </h1>
           <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
-            I'm Akio. Operator and entrepreneur, currently based in SF. 
+            I&apos;m Akio. Operator and entrepreneur, currently based in SF. 
             <br></br>
             I believe in transparency and created this page to share more about my principles and thoughts. 
           </p>

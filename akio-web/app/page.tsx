@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <AnimatedBackground />
-      <div className="min-h-screen flex items-center justify-center content-container">
+      <main className="flex min-h-screen items-center justify-center">
         <div className="max-w-3xl w-full space-y-8 text-center bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
             Welcome to My Personal Website
@@ -17,7 +17,7 @@ export default function Home() {
             <Button>Learn More About Me</Button>
           </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }

@@ -13,7 +13,7 @@ interface NavItem {
 
 const navigation: NavItem[] = [
   {
-    title: 'Akio Ishihara',
+    title: <span className="font-bold text-xl pt-3 mb-4 block">Akio Ishihara</span>,
     href: '/'
   },
   {

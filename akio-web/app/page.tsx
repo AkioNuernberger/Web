@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
           <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
             <span className="block mb-4">I&apos;m Akio. Operator and entrepreneur, currently based in SF.</span>
-            <span className="block">I believe in transparency and created this page to share more about my principles and thoughts.</span>
+            <span className="block">I believe that transparency makes collaboration easier and created this page to share more about my principles and thoughts.</span>
           </p>
           <div className="mt-5 sm:mt-8">
             <Link href="/pages/user-manual-akio">

@@ -28,7 +28,7 @@ const navigation: NavItem[] = [
   {
     title: 'Business',
     children: [
-      { title: 'TBD', href: '/business/tbd' }
+      { title: 'Contact', href: '/business/contact' }
     ]
   }
 ]

@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Akio Ishihara',
-  description: 'Welcome - learn more about Akio here',
+  title: 'Akio Nuernberger',
+  description: 'Welcome - learn more about Akio',
 }
 
 export default function RootLayout({

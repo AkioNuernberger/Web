@@ -1,9 +1,21 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, createContext, useContext } from 'react'
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
 import { cn } from "@/lib/utils"
+
+// Create a context for the navbar state
+export const NavbarContext = createContext<{
+  isExpanded: boolean;
+  setIsExpanded: (value: boolean) => void;
+}>({
+  isExpanded: false,
+  setIsExpanded: () => {},
+});
+
+// Add a hook to use the navbar context
+export const useNavbar = () => useContext(NavbarContext);
 
 interface NavItem {
   title: string
@@ -90,14 +102,22 @@ const NavItemComponent = ({
 }
 
 const Navbar = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <nav className="w-full sm:w-48 h-auto sm:h-screen bg-gray-100 border-b sm:border-r border-gray-200 flex sm:flex-col justify-start fixed left-0 top-0 z-10 overflow-y-auto">
-      <div className="w-full p-4 space-y-4">
-        {navigation.map((item) => (
-          <NavItemComponent key={item.title} item={item} />
-        ))}
-      </div>
-    </nav>
+    <NavbarContext.Provider value={{ isExpanded, setIsExpanded }}>
+      <nav className="w-full sm:w-48 h-auto sm:h-screen bg-gray-100 border-b sm:border-r border-gray-200 flex sm:flex-col justify-start fixed left-0 top-0 z-10 overflow-y-auto">
+        <div className="w-full p-4 space-y-4">
+          {navigation.map((item) => (
+            <NavItemComponent 
+              key={item.title} 
+              item={item} 
+              onClick={() => setIsExpanded(false)}
+            />
+          ))}
+        </div>
+      </nav>
+    </NavbarContext.Provider>
   )
 }
 

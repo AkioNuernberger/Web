@@ -38,7 +38,7 @@
 
 @layer utilities {
   .content-container {
-    @apply sm:ml-48 p-4 sm:p-6 lg:p-8 mt-16 sm:mt-0;
+    @apply sm:ml-48 p-4 sm:p-6 lg:p-8 mt-16 sm:mt-0 transition-all duration-300 ease-in-out;
   }
 }
 

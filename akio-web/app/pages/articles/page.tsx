@@ -20,7 +20,7 @@ export default function Thoughts() {
     <div className="content-container">
       <div className="mb-12">
         <h1 className="text-4xl font-bold mb-4">Thoughts on different topics</h1>
-        <p className="text-lg text-gray-600">placeholder</p>
+        <p className="text-lg text-gray-600">I write about a range of different topics, from innovation in other industries to my own experiences.</p>
       </div>
 
       <div className="grid gap-8">

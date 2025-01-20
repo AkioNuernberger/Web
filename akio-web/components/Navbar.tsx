@@ -33,7 +33,13 @@ const navigation: NavItem[] = [
   }
 ]
 
-const NavItemComponent = ({ item }: { item: NavItem }) => {
+const NavItemComponent = ({ 
+  item, 
+  onClick 
+}: { 
+  item: NavItem, 
+  onClick?: () => void 
+}) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   if (item.children) {
@@ -58,6 +64,7 @@ const NavItemComponent = ({ item }: { item: NavItem }) => {
                 key={child.href}
                 href={child.href || '#'}
                 className="block py-1 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                onClick={onClick}
               >
                 {child.title}
               </Link>
@@ -71,7 +78,11 @@ const NavItemComponent = ({ item }: { item: NavItem }) => {
   return (
     <Link
       href={item.href || '#'}
-      className="block py-2 text-gray-700 hover:text-gray-900 transition-colors"
+      className={cn(
+        "block py-2 text-gray-700 hover:text-gray-900 transition-colors",
+        item.className
+      )}
+      onClick={onClick}
     >
       {item.title}
     </Link>
